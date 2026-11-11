@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#101d3b">
+<title>VMware Summit 2026 | 참가 신청 및 사전 설문</title>
+<style>
+:root{--navy:#101d3b;--blue:#3157d5;--ink:#182238;--muted:#64708a;--line:#e1e6ef;--bg:#f4f6fb;--white:#fff;--red:#c73535}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--ink);font-family:Inter,Pretendard,"Noto Sans KR",Arial,sans-serif;line-height:1.55}
+.hero{background:linear-gradient(135deg,#101d3b,#1d3975);color:#fff;padding:48px 20px 42px}.hero-inner,.wrap{max-width:850px;margin:0 auto}.eyebrow{font-size:12px;font-weight:800;letter-spacing:.16em;color:#b9c9ff}.hero h1{font-size:clamp(27px,5vw,42px);line-height:1.2;margin:12px 0}.hero p{margin:0;color:#dce5ff;max-width:620px}.hero .meta{display:flex;gap:9px;flex-wrap:wrap;margin-top:22px}.pill{border:1px solid #ffffff55;border-radius:999px;padding:6px 12px;font-size:12px}
+.wrap{padding:28px 16px 64px}.intro,.section,.notice{background:var(--white);border:1px solid var(--line);border-radius:16px;padding:24px;margin-bottom:16px;box-shadow:0 5px 18px #1d2b4a08}
+.intro h2{font-size:18px;margin:0 0 8px}.intro p{margin:0;color:var(--muted);font-size:14px}
+.progress-row{display:flex;justify-content:space-between;color:var(--muted);font-size:12px;margin:22px 2px 8px}.progress{height:6px;background:#e8ecf5;border-radius:99px;overflow:hidden}.progress span{display:block;width:0;height:100%;background:var(--blue);transition:width .2s}
+.section h2{font-size:18px;margin:0 0 4px}.section .desc{font-size:13px;color:var(--muted);margin:0 0 22px}.field{padding:17px 0;border-top:1px solid #edf0f5}.field:first-of-type{border-top:0}.qtitle{display:block;font-size:14px;font-weight:700;margin-bottom:10px}.num{display:inline-grid;place-items:center;width:24px;height:24px;border-radius:7px;background:#edf1ff;color:var(--blue);font-size:11px;margin-right:8px}.required{color:var(--red);font-size:11px;margin-left:5px}
+input,select,textarea{font:inherit;color:var(--ink)}input[type=text],input[type=email],input[type=tel],input[type=number],select,textarea{width:100%;border:1px solid #d8deea;border-radius:9px;padding:12px 13px;background:#fff;outline:none;min-height:46px}textarea{min-height:92px;resize:vertical}input:focus,select:focus,textarea:focus{border-color:var(--blue);box-shadow:0 0 0 3px #3157d51a}
+.options{display:flex;gap:9px 16px;flex-wrap:wrap}.options label{display:inline-flex;align-items:center;gap:7px;font-size:14px;cursor:pointer}.options input{accent-color:var(--blue);width:16px;height:16px}.hint{font-size:12px;color:var(--muted);margin-top:7px}
+.consent-box{background:#f8f9fc;border:1px solid var(--line);border-radius:10px;padding:15px;font-size:13px;color:#4f5c74;margin-bottom:12px;max-height:170px;overflow:auto}.consent-choice{display:flex;gap:18px;flex-wrap:wrap;margin-top:10px}.consent-choice label{font-size:13px;display:flex;gap:7px;align-items:center}.consent-choice input{accent-color:var(--blue)}
+.notice{font-size:12px;color:var(--muted);line-height:1.7}.actions{display:flex;gap:10px;justify-content:flex-end;margin-top:20px}.btn{border:0;border-radius:10px;padding:14px 22px;font-weight:700;cursor:pointer}.btn-primary{background:var(--blue);color:white}.btn-secondary{background:#e9edf5;color:#34415a}.btn:disabled{opacity:.5;cursor:not-allowed}
+.error{display:none;color:var(--red);font-size:12px;margin-top:6px}.field.invalid input,.field.invalid select,.field.invalid textarea{border-color:var(--red)}.field.invalid .error{display:block}
+footer{text-align:center;color:#8a94a8;font-size:11px;padding:20px}
+@media(max-width:600px){.hero{padding:34px 18px}.wrap{padding:18px 12px 42px}.intro,.section,.notice{padding:18px;border-radius:13px}.actions{flex-direction:column}.btn{width:100%}}
+</style>
+</head>
+<body>
+<header class="hero"><div class="hero-inner">
+<div class="eyebrow">VMWARE SUMMIT 2026</div>
+<h1>참가 신청 및<br>사전 설문</h1>
+<p>클라우드 인프라와 가상화 환경의 변화, 주요 기술 과제 및 도입 계획을 확인하기 위한 사전 설문입니다. 응답해 주신 내용은 행사 준비와 후속 안내에 활용됩니다.</p>
+<div class="meta"><span class="pill">참가 등록</span><span class="pill">클라우드 환경 설문</span><span class="pill">약 5분 소요</span></div>
+</div></header>
+<main class="wrap">
+<div class="intro"><h2>설문 작성 안내</h2><p>정확한 행사 안내와 맞춤형 정보 제공을 위해 아래 항목을 작성해 주세요. 별표(*)가 표시된 항목은 필수 입력 사항입니다. 개인정보 동의 내용을 확인한 후 제출해 주세요.</p>
+<div class="progress-row"><span>작성 진행률</span><strong id="progressText">0 / 26</strong></div><div class="progress"><span id="progressBar"></span></div></div>
+<form id="surveyForm" novalidate>
+<section class="section"><h2>01. 참가자 기본 정보</h2><p class="desc">참가자 확인 및 행사 안내를 위한 정보입니다.</p>
+<div class="field" data-required="true"><label class="qtitle"><span class="num">01</span>성함 <span class="required">*</span></label><input name="name" type="text" autocomplete="name" required placeholder="이름을 입력해 주세요"><div class="error">성함을 입력해 주세요.</div></div>
+<div class="field" data-required="true"><label class="qtitle"><span class="num">02</span>회사명 <span class="required">*</span></label><input name="company" type="text" required placeholder="회사명을 입력해 주세요"><div class="error">회사명을 입력해 주세요.</div></div>
+<div class="field"><label class="qtitle"><span class="num">03</span>부서</label><input name="department" type="text" placeholder="부서명을 입력해 주세요"></div>
+<div class="field"><label class="qtitle"><span class="num">04</span>직함 / 직급</label><input name="position" type="text" placeholder="예: 팀장, 부장, 매니저"></div>
+<div class="field" data-required="true"><label class="qtitle"><span class="num">05</span>담당 업무 / 직무 <span class="required">*</span></label><select name="job" required><option value="">선택해 주세요</option><option>IT 기획 / 전략</option><option>IT 인프라 / 시스템 운영</option><option>클라우드 / 가상화</option><option>정보보안</option><option>개발 / 엔지니어링</option><option>구매 / 조달</option><option>경영진 / 의사결정</option><option>영업 / 사업개발</option><option>기타 IT 관련 직무</option><option>기타</option></select><div class="error">담당 업무를 선택해 주세요.</div></div>
+<div class="field" data-required="true"><label class="qtitle"><span class="num">06</span>업무용 이메일 <span class="required">*</span></label><input name="email" type="email" autocomplete="email" required placeholder="name@company.com"><div class="error">유효한 이메일 주소를 입력해 주세요.</div></div>
+<div class="field"><label class="qtitle"><span class="num">07</span>연락처</label><input name="phone" type="tel" autocomplete="tel" placeholder="예: 010-1234-5678"></div>
+<div class="field"><label class="qtitle"><span class="num">08</span>귀사의 주요 산업 분야</label><select name="industry"><option value="">선택해 주세요</option><option>제조</option><option>금융 / 보험</option><option>유통 / 서비스</option><option>공공 / 교육</option><option>IT / 통신</option><option>의료 / 제약</option><option>건설 / 물류</option><option>기타</option></select></div>
+<div class="field"><label class="qtitle"><span class="num">09</span>회사 임직원 규모</label><select name="companySize"><option value="">선택해 주세요</option><option>100명 미만</option><option>100~499명</option><option>500~999명</option><option>1,000~4,999명</option><option>5,000명 이상</option></select></div>
+<div class="field"><label class="qtitle"><span class="num">10</span>IT 관련 의사결정 또는 프로젝트 참여 역할</label><div class="options"><label><input type="radio" name="role" value="최종 의사결정">최종 의사결정</label><label><input type="radio" name="role" value="예산 결정">예산 결정</label><label><input type="radio" name="role" value="기술 검토">기술 검토</label><label><input type="radio" name="role" value="실무 운영">실무 운영</label><label><input type="radio" name="role" value="정보 수집">정보 수집</label></div></div>
+</section>
+<section class="section"><h2>02. 클라우드 및 인프라 환경</h2><p class="desc">현재 운영 환경과 관심 기술을 선택해 주세요.</p>
+<div class="field"><label class="qtitle"><span class="num">11</span>현재 귀사의 IT 인프라 운영 환경은 무엇입니까? (복수 선택 가능)</label><div class="options"><label><input type="checkbox" name="environment" value="온프레미스">온프레미스</label><label><input type="checkbox" name="environment" value="프라이빗 클라우드">프라이빗 클라우드</label><label><input type="checkbox" name="environment" value="퍼블릭 클라우드">퍼블릭 클라우드</label><label><input type="checkbox" name="environment" value="하이브리드 클라우드">하이브리드 클라우드</label><label><input type="checkbox" name="environment" value="멀티 클라우드">멀티 클라우드</label><label><input type="checkbox" name="environment" value="검토 중">검토 중</label></div></div>
+<div class="field"><label class="qtitle"><span class="num">12</span>사용 중이거나 도입을 검토 중인 클라우드 플랫폼 (복수 선택 가능)</label><div class="options"><label><input type="checkbox" name="cloud" value="AWS">AWS</label><label><input type="checkbox" name="cloud" value="Microsoft Azure">Microsoft Azure</label><label><input type="checkbox" name="cloud" value="Google Cloud">Google Cloud</label><label><input type="checkbox" name="cloud" value="VMware Cloud Foundation">VMware Cloud Foundation</label><label><input type="checkbox" name="cloud" value="Naver Cloud">Naver Cloud</label><label><input type="checkbox" name="cloud" value="기타">기타</label><label><input type="checkbox" name="cloud" value="미사용 / 미정">미사용 / 미정</label></div></div>
+<div class="field"><label class="qtitle"><span class="num">13</span>사용 중인 VMware 제품 또는 솔루션 (복수 선택 가능)</label><div class="options"><label><input type="checkbox" name="vmware" value="VMware vSphere">VMware vSphere</label><label><input type="checkbox" name="vmware" value="VMware vSAN">VMware vSAN</label><label><input type="checkbox" name="vmware" value="VMware NSX">VMware NSX</label><label><input type="checkbox" name="vmware" value="VMware Cloud Foundation">VMware Cloud Foundation</label><label><input type="checkbox" name="vmware" value="VCF Automation">VCF Automation</label><label><input type="checkbox" name="vmware" value="기타">기타</label><label><input type="checkbox" name="vmware" value="사용하지 않음">사용하지 않음</label><label><input type="checkbox" name="vmware" value="잘 모르겠음">잘 모르겠음</label></div></div>
+<div class="field"><label class="qtitle"><span class="num">14</span>가상화 / 클라우드 환경에서 운영 중인 주요 업무 (복수 선택 가능)</label><div class="options"><label><input type="checkbox" name="workload" value="업무 시스템">업무 시스템</label><label><input type="checkbox" name="workload" value="데이터베이스">데이터베이스</label><label><input type="checkbox" name="workload" value="VDI / 데스크톱">VDI / 데스크톱</label><label><input type="checkbox" name="workload" value="개발 / 테스트">개발 / 테스트</label><label><input type="checkbox" name="workload" value="AI / 데이터 분석">AI / 데이터 분석</label><label><input type="checkbox" name="workload" value="재해복구 / 백업">재해복구 / 백업</label><label><input type="checkbox" name="workload" value="기타">기타</label></div></div>
+<div class="field"><label class="qtitle"><span class="num">15</span>현재 IT 인프라 운영에서 가장 큰 고민이나 개선 과제는 무엇입니까? (복수 선택 가능)</label><div class="options"><label><input type="checkbox" name="challenge" value="운영 비용 절감">운영 비용 절감</label><label><input type="checkbox" name="challenge" value="라이선스 / 구독 정책 변화">라이선스 / 구독 정책 변화</label><label><input type="checkbox" name="challenge" value="성능 및 확장성">성능 및 확장성</label><label><input type="checkbox" name="challenge" value="보안 및 규제 대응">보안 및 규제 대응</label><label><input type="checkbox" name="challenge" value="운영 자동화">운영 자동화</label><label><input type="checkbox" name="challenge" value="클라우드 전환 / 통합">클라우드 전환 / 통합</label><label><input type="checkbox" name="challenge" value="전문 인력 부족">전문 인력 부족</label><label><input type="checkbox" name="challenge" value="기타">기타</label></div></div>
+<div class="field"><label class="qtitle"><span class="num">16</span>향후 관심 있는 기술 또는 세션 주제 (복수 선택 가능)</label><div class="options"><label><input type="checkbox" name="interest" value="VMware Cloud Foundation">VMware Cloud Foundation</label><label><input type="checkbox" name="interest" value="프라이빗 클라우드">프라이빗 클라우드</label><label><input type="checkbox" name="interest" value="하이브리드 / 멀티 클라우드">하이브리드 / 멀티 클라우드</label><label><input type="checkbox" name="interest" value="AI 인프라">AI 인프라</label><label><input type="checkbox" name="interest" value="네트워크 / 보안">네트워크 / 보안</label><label><input type="checkbox" name="interest" value="비용 최적화">비용 최적화</label><label><input type="checkbox" name="interest" value="마이그레이션">마이그레이션</label></div></div>
+</section>
+<section class="section"><h2>03. 프로젝트 및 예산 계획</h2><p class="desc">도입 검토 현황을 파악하기 위한 항목입니다. 확정되지 않은 경우 예상 수준으로 선택해 주세요.</p>
+<div class="field"><label class="qtitle"><span class="num">17</span>관련 솔루션 도입 또는 전환 검토 시기는 언제입니까?</label><div class="options"><label><input type="radio" name="timeline" value="현재 진행 중">현재 진행 중</label><label><input type="radio" name="timeline" value="현재~3개월 이내">현재~3개월 이내</label><label><input type="radio" name="timeline" value="3~6개월 이내">3~6개월 이내</label><label><input type="radio" name="timeline" value="6개월 이후">6개월 이후</label><label><input type="radio" name="timeline" value="계획 없음 / 정보 수집">계획 없음 / 정보 수집</label></div></div>
+<div class="field"><label class="qtitle"><span class="num">18</span>관련 프로젝트 예산 편성 상태는 어떻습니까?</label><div class="options"><label><input type="radio" name="budgetStatus" value="예산 확보 완료">예산 확보 완료</label><label><input type="radio" name="budgetStatus" value="예산 검토 / 편성 중">예산 검토 / 편성 중</label><label><input type="radio" name="budgetStatus" value="예산 신청 예정">예산 신청 예정</label><label><input type="radio" name="budgetStatus" value="예산 미정">예산 미정</label><label><input type="radio" name="budgetStatus" value="해당 없음">해당 없음</label></div></div>
+<div class="field"><label class="qtitle"><span class="num">19</span>예상 프로젝트 예산 규모는 어느 정도입니까?</label><div class="options"><label><input type="radio" name="budgetRange" value="1천만원 미만">1천만원 미만</label><label><input type="radio" name="budgetRange" value="1천만원~5천만원">1천만원~5천만원</label><label><input type="radio" name="budgetRange" value="5천만원~1억원">5천만원~1억원</label><label><input type="radio" name="budgetRange" value="1억원~3억원">1억원~3억원</label><label><input type="radio" name="budgetRange" value="3억원 이상">3억원 이상</label><label><input type="radio" name="budgetRange" value="미정 / 공개 어려움">미정 / 공개 어려움</label></div></div>
+<div class="field"><label class="qtitle"><span class="num">20</span>현재 계획 중이거나 검토 중인 프로젝트가 있다면 선택해 주세요. (복수 선택 가능)</label><div class="options"><label><input type="checkbox" name="project" value="서버 / 가상화 고도화">서버 / 가상화 고도화</label><label><input type="checkbox" name="project" value="클라우드 전환">클라우드 전환</label><label><input type="checkbox" name="project" value="데이터센터 이전 / 통합">데이터센터 이전 / 통합</label><label><input type="checkbox" name="project" value="라이선스 갱신 / 재검토">라이선스 갱신 / 재검토</label><label><input type="checkbox" name="project" value="보안 강화">보안 강화</label><label><input type="checkbox" name="project" value="AI 인프라 구축">AI 인프라 구축</label><label><input type="checkbox" name="project" value="기타 / 미정">기타 / 미정</label></div></div>
+<div class="field"><label class="qtitle"><span class="num">21</span>솔루션 검토 및 구매 과정에서 귀하의 역할은 무엇입니까?</label><div class="options"><label><input type="radio" name="buyRole" value="최종 결정">최종 결정</label><label><input type="radio" name="buyRole" value="구매 / 예산 담당">구매 / 예산 담당</label><label><input type="radio" name="buyRole" value="기술 평가 / 추천">기술 평가 / 추천</label><label><input type="radio" name="buyRole" value="실무 사용자">실무 사용자</label><label><input type="radio" name="buyRole" value="기타">기타</label></div></div>
+<div class="field"><label class="qtitle"><span class="num">22</span>행사 이후 희망하는 후속 안내 또는 상담이 있습니까? (복수 선택 가능)</label><div class="options"><label><input type="checkbox" name="followup" value="제품 / 솔루션 소개">제품 / 솔루션 소개</label><label><input type="checkbox" name="followup" value="기술 상담 / 아키텍처 검토">기술 상담 / 아키텍처 검토</label><label><input type="checkbox" name="followup" value="견적 / 예산 상담">견적 / 예산 상담</label><label><input type="checkbox" name="followup" value="PoC / 데모">PoC / 데모</label><label><input type="checkbox" name="followup" value="자료 수령">자료 수령</label><label><input type="checkbox" name="followup" value="후속 연락 불필요">후속 연락 불필요</label></div></div>
+<div class="field"><label class="qtitle"><span class="num">23</span>추가로 궁금한 사항이나 요청 사항이 있으시면 작성해 주세요.</label><textarea name="memo" placeholder="자유롭게 작성해 주세요."></textarea></div>
+</section>
+<section class="section"><h2>04. 개인정보 수집 및 이용 동의</h2><p class="desc">아래 내용을 확인하고 동의 여부를 선택해 주세요.</p>
+<div class="field" data-required="true"><label class="qtitle"><span class="num">24</span>개인정보 수집·이용 동의 <span class="required">* 필수</span></label><div class="consent-box">수집·이용 목적: VMware Summit 2026 참가 신청 확인, 행사 운영 및 참석 안내, 문의 대응<br>수집 항목: 성명, 회사명, 부서, 직함, 담당 업무, 업무용 이메일, 연락처 및 설문 응답 내용<br>보유 및 이용 기간: 행사 종료 후 1년 또는 관련 법령에 따른 보관 기간까지. 단, 관계 법령상 보존 의무가 있는 경우 해당 기간 동안 보관합니다.<br>귀하는 개인정보 수집·이용에 대한 동의를 거부할 권리가 있습니다. 다만 필수 항목 동의를 거부하는 경우 행사 신청 및 안내가 제한될 수 있습니다.</div><div class="consent-choice"><label><input type="radio" name="privacy" value="동의" required>동의합니다</label><label><input type="radio" name="privacy" value="미동의">동의하지 않습니다</label></div><div class="error">필수 개인정보 수집·이용에 동의해 주세요.</div></div>
+<div class="field"><label class="qtitle"><span class="num">25</span>개인정보 제3자 제공 동의 <span class="required">* 선택</span></label><div class="consent-box">제공받는 자: 행사 공동 주최·후원사 및 행사 운영 협력사(해당하는 경우 별도 고지)<br>제공 목적: 행사 운영, 참석 확인, 요청하신 제품·솔루션 관련 상담 및 후속 안내<br>제공 항목: 성명, 회사명, 부서, 직함, 업무용 이메일, 연락처 및 관련 설문 응답<br>보유 및 이용 기간: 제공 목적 달성 후 지체 없이 파기하거나 관계 법령에 따라 보관합니다.<br>동의를 거부하셔도 행사 신청에는 불이익이 없으며, 제3자 제공을 통한 후속 안내만 제한될 수 있습니다.</div><div class="consent-choice"><label><input type="radio" name="thirdParty" value="동의">동의합니다</label><label><input type="radio" name="thirdParty" value="미동의" checked>동의하지 않습니다</label></div></div>
+<div class="field"><label class="qtitle"><span class="num">26</span>마케팅 정보 수신 동의 <span class="required">* 선택</span></label><div class="consent-box">행사 및 관련 제품·서비스, 세미나·교육·프로모션 소식 등을 이메일 또는 문자메시지로 안내할 수 있습니다. 동의 여부는 선택 사항이며, 동의하지 않거나 동의 후 철회하더라도 행사 신청에 불이익은 없습니다.</div><div class="consent-choice"><label><input type="radio" name="marketing" value="동의">동의합니다</label><label><input type="radio" name="marketing" value="미동의" checked>동의하지 않습니다</label></div></div>
+</section>
+<div class="notice">※ 본 페이지는 현재 신청 화면 및 입력값 검증이 가능한 프런트엔드 버전입니다. 실제 응답을 저장하거나 운영 담당자에게 전달하려면 Google Sheets, 설문 수집 시스템 또는 별도 서버 API 연결이 필요합니다. 개인정보 처리 주체·제3자 제공 대상·보유 기간은 실제 행사 운영 주체 및 계약 관계에 맞게 최종 확인 후 확정해 주세요.</div>
+<div class="actions"><button class="btn btn-secondary" type="reset">초기화</button><button class="btn btn-primary" type="submit">신청 내용 확인</button></div>
+</form>
+<footer>VMware Summit 2026 · 참가 신청 및 사전 설문</footer>
+</main>
+<script>
+const form=document.getElementById('surveyForm');
+const bar=document.getElementById('progressBar'), progressText=document.getElementById('progressText');
+function updateProgress(){
+ const fields=[...form.querySelectorAll('.field')];
+ let done=0;
+ fields.forEach(f=>{
+  const controls=[...f.querySelectorAll('input,select,textarea')];
+  const checked=controls.some(c=>c.type==='checkbox'||c.type==='radio'?c.checked:c.value.trim()!=='');
+  if(checked)done++;
+ });
+ progressText.textContent=done+' / 26';bar.style.width=(done/26*100)+'%';
+}
+form.addEventListener('input',updateProgress);form.addEventListener('change',updateProgress);
+form.addEventListener('reset',()=>setTimeout(()=>{form.querySelectorAll('.field').forEach(f=>f.classList.remove('invalid'));updateProgress()},0));
+form.addEventListener('submit',e=>{
+ e.preventDefault();
+ form.querySelectorAll('.field').forEach(f=>f.classList.remove('invalid'));
+ let first=null;
+ form.querySelectorAll('.field[data-required="true"]').forEach(f=>{
+  const controls=[...f.querySelectorAll('input,select,textarea')];
+  const ok=controls.some(c=>c.type==='radio'||c.type==='checkbox'?c.checked:c.checkValidity()&&c.value.trim()!=='');
+  if(!ok){f.classList.add('invalid');if(!first)first=f}
+ });
+ const email=form.elements.email;
+ const emailField=email.closest('.field');
+ if(email.value.trim()&&!email.checkValidity()){emailField.classList.add('invalid');if(!first)first=emailField}
+ const privacy=form.querySelector('input[name="privacy"]:checked');
+ if(privacy&&privacy.value!=='동의'){const f=privacy.closest('.field');f.classList.add('invalid');f.querySelector('.error').textContent='필수 개인정보 수집·이용 동의가 필요합니다.';if(!first)first=f}
+ if(first){first.scrollIntoView({behavior:'smooth',block:'center'});return}
+ alert('필수 항목 입력과 동의 여부가 확인되었습니다.\n\n현재 페이지는 응답 저장 서버와 연결되어 있지 않아 신청 내용이 전송되지 않았습니다. 운영용 접수 기능을 사용하려면 응답 저장 시스템 연동이 필요합니다.');
+});
+updateProgress();
+</script>
+</body>
+</html>
